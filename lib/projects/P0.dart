@@ -1,12 +1,3 @@
-/*
-How do I handle assets in Flutter?
-How do I handle online connection?
-How do I handle upper paths? Do I add them to root folder? (assets)
-Why should you use 'final' for variables?
-Difference between Image.file() and Image.asset() ?
-Why do I put _ before variable names?
- */
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -67,7 +58,7 @@ class _HomePageState extends State<HomePage> {
                     padding:
                         const EdgeInsets.symmetric(horizontal: 16, vertical: 0),
                     child: TextFormField(
-                      keyboardType: TextInputType.number,
+                      keyboardType: const TextInputType.numberWithOptions(decimal: true),
                       controller: _textController,
                       validator: (value) {
                         if (value == null || value.isEmpty) {
@@ -100,7 +91,8 @@ class _HomePageState extends State<HomePage> {
                           }
                         },
                         child: const Text('CONVERT',
-                            style: TextStyle(fontSize: 14))),
+                            style: TextStyle(fontSize: 14))
+                    ),
                   ),
                 ],
               ),
@@ -110,7 +102,8 @@ class _HomePageState extends State<HomePage> {
               child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 0),
                   child: Text('${_convertedValue.toStringAsFixed(2)} RON',
-                      style: const TextStyle(color: Colors.grey, fontSize: 28))
+                      style: const TextStyle(color: Colors.grey, fontSize: 28)
+                  )
               ),
             ),
           ],
