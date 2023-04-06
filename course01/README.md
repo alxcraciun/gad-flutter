@@ -1,48 +1,54 @@
 # Curs 01
-
 Data: 03-04-2023
 
 ## Logistics
 
-Cursurile sunt inregistrate
+- Sunt 40 de participanti 
+- Cursurile sunt inregistrate
+- Temele vor necesita research individual
 
-Trebuie sa nu ai mai mult de 2 absente altfel te scoate
+<br>
 
-Sunt foarte importante temele (se va face si research individual)
+#### Medii de programare: 
+- IntelliJ,
+- AndroidStudio,
+- Visual Studio, 
+- Vscode
 
-Sunt 40 de participanti in total
+<br>
 
-IntelliJ sau Visual Studio, Razvan nu foloseste VSCode
+#### Teme
+- Temele se trimit in privat pe Slack
+- Trimite temele cu cel putin o zi inainte
+- Temele se urca pe repos separate pe Github
 
-Temele se trimit in privat (se pun pe Github)
+<br>
 
-Trimite temele cu cel putin o zi inainte
+## Structura
 
-Temele mai usoare pe luni, temele mai grele pe miercuri
+- Use Flutter Inspector for debugging interface
+- Run `flutter doctor` to see if environment is working
 
----
+<br>
 
-> Folder Android
-> Folder IOS
+#### pubspec.yaml
 
----
-pubspec.yaml
+- Sterge toate comentariile puse default
+- dependencies > pe telefon
+- dev_dependencies > pe masina noastra
 
-Sterge toate comentariile puse de la Google
+<br>
 
-dependencies > pe telefon
-dev_dependencies > pe masina noastra
+#### analysis_options.yaml
 
----
-analysis_options.yaml
+- Regulile respectate in cod 
+- Similar cu Typescript vs JS
 
-ce reguli se respecta in cod
+<br>
 
----
+#### main.dart
 
-main.dart
-
-poti folosi telefonul
+- Poti folosi telefonul pentru Debugging poti folosi telefonul
 nu poti face aplicatii de ios
 
 ```
@@ -54,84 +60,72 @@ void main()
 }
 ```
 
----
-Flutter Inspector
----
+<br>
 
-alignment: AlignmentDirectional.Center,
+## Shortcuts
 
-CrossAxisAlignment.center
+- ALT+ENTER - Wrap with		
+- CTRL+P - arata parametrii 
 
-flutter doctor
+<br>
 
-CTRL+P - arata parametrii	///	CTRL+ALT+Space
-ALT+ENTER Wrap with		///   CTRL + .
-
-Colors.red
-
----
-
-AVEM 2 TIPURI DE WIDGETS:
-
+## Widgets
 - Stateless (shortcut -> stless)
-
 - Stateful (shortcut -> stful)
+
+<br>
 
 State-ul e o valoare pe care vreau sa o retin
 
----
+<br>
+
+#### Stateful Rules:
+1.  Definim o variabila care se schimba
+2.  Folosim variabila in functia build pentru a crea UI
+3.  Modificam variabila in setState pentru a seta UI
+
+<br>
+
+#### Sabloane:
+- MaterialApp - Android
+- CupertinoApp - IOS App
 
 
+<br>
 
-void main() {
+## Code Snippets 
 
-runApp();
-
-}
-
-Sablonul Aplicatiei (Default):
-- MaterialApp
-- WidgetApp
-- CupertinoApp
-
-@override - metadata
-
-Stateful Rules:
-01. Definim o variabila care se schimba
-02. Folosim variabila in functia build pentru a crea UI
-03. Modificam variabila in setState pentru a seta UI
+- Toate widget-urile au o functie build
+- In flutter font-ul este de tipul double
+- Clasa Abstracta - functiile nu au o implementare
+- @override - metadata pentru suprascriere functie
+- Daca nu pun in setState nu se modifica Widget-ul, doar variabila
 
 
+```
 return Scaffold()  -->  o pagina goala
-
-Wrap with GestureDetector
+Wrap with GestureDetector  -->  event detector
 
 Color _currentColor = Colors.green;
-
-In flutter font-ul este de tipul double
-
 print('_currentCoolor: $_currentColor');
 
-!!! Daca nu pun in setState nu se modifica Widget-ul, doar variabila
+alignment: AlignmentDirectional.Center,
+CrossAxisAlignment.center
+```
 
-Toate widget-urile au o functie build
+<br>
 
-Clasa Abstracta - functiile nu au o implementare
+## Intrebari Final
 
-Flutter > React Native (e compilat, nu e interpretat)
+- Flutter e mai rapid decat React Native (compilat, nu e interpretat)
+- Poti dezvolta si aplicatii de Web, Windows, Mac, Linux tot din Flutter
 
-Poti dezvolta si aplicatii pe Desktop tot din Flutter
+<br>
 
-Poti sa-ti creezi si widgets
+- Pentru MobileDev, ar trebui sa ai minim 16GB RAM
+- Conteaza mai mult branding-ul, nu atat de mult platforma nativa
 
-Ar trebui sa incepi de la 16GB RAM
+<br>
 
-de obicei conteaza mai mult brandul, nu atat de mult platforma
-
-pentru a dezvolta pe Iphone ai nevoie neaparat de un Macbook
-
-Pe emulator nu trebuie semnate aplicatiile, doar pe device-ul real
-
-Tema trebuie pusa pe Github pana marti seara si trimisa in privat
-
-!!! E super important sa-ti faci temele ca altfel ramai in urma
+- Pentru a dezvolta pe Iphone ai nevoie neaparat de un Macbook
+- Pe emulatorul IOS nu trebuie semnate aplicatiile, doar pe device-ul real
