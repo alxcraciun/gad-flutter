@@ -90,7 +90,6 @@ State-ul e o valoare pe care vreau sa o retin
 - MaterialApp - Android
 - CupertinoApp - IOS App
 
-
 <br>
 
 ## Code Snippets 
