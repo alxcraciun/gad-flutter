@@ -1,24 +1,13 @@
-void main()
-{
-  doSomething('Razvan', 19);
-  doSomething2('Razvan', null, 20);
-  doSomething3('Razvan', legs: 2, age: 40);
-  doSomething4('Razvan', age: 20);
+// ignore_for_file: avoid_print, unused_local_variable
+
+void main() {
+
+  // map - give a function, returns an iterable
+  // you get as many elements as you have
+
+  List<int> list = <int>[1, 1, 2, 3];
+  print(list.map((int item) => 'a' * item));  // (a, a, aa, aaa)
+
+  List<String> names = <String> ['Madalin', 'Razvan', 'Nicusor'];
+  print(names.map((String name) => name.length));
 }
-
-// [return type] [name] ( [parameters] );
-
-// positioned required
-void doSomething(String name, int age) {}
-
-// positioned optional
-void doSomething2(String name, [int? age, int? legs]) {}
-
-// named optional
-void doSomething3(String name, {int? age, int? legs}) {}
-
-// named required
-void doSomething4(String name, {required int age, int? legs}) {}
-
-// named with default value
-void doSomething5(String name, {int age = 40, int? legs}) {}

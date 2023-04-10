@@ -1,22 +1,14 @@
 // ignore_for_file: avoid_print, unused_local_variable
 
+void main() {
 
-// _ is for private
+  // expand - give a function, returns an iterable
+  // you can get EVEN MORE elements as you have
 
-// 'with' pentru mixin
-// 'extends' pentru class
+  List<String> names = <String> ['Madalin', 'Razvan', 'Nicusor'];
+  print(names.expand((String name) => [name, name.length]));  // (Madalin, 7, Razvan, 6, Nicusor, 7)
 
-class Dog with Eat {
-  String? _name;
-
-  set name (String value) {
-    _name = value;
-  }
+  // lista acum va deveni dynamic
+  // el stie singur tipul, dar e good practice sa scrii tipul 
+  // in functie de ce ai in analysis_options.yaml poate da warning
 }
-
-mixin Eat {
-  void eat() {
-    print('so good');
-  }
-}
-
