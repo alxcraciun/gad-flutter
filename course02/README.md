@@ -54,7 +54,6 @@ Hot Restart
 [11](/11.dart) - Object-Oriented Programming <br>
 [12](/12.dart) - Functions & Parameters <br>
 [13](/13.dart) - Implement, Extend, Mixin <br>
-[14](/14.dart) - Private Data <br>
-
+[14](/14.dart) - Private Data, Getter, Setter <br>
 
 <br>
