@@ -1,6 +1,6 @@
 # Put this into => .github/workflows/
 
-name: Make sure my all is nice
+name: Check code formatting
 on:
   push:
 

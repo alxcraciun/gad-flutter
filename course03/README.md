@@ -2,7 +2,7 @@
 
 ## Homework
 
--  E mai greu sa folosesti CI/CD cand ai mai multe branches
+- E mai greu sa folosesti CI/CD cand ai mai multe branches
 - Nu trebuie neaparat folosit setState() la alerte
 - remainder() este echivalent cu %
 - FilteringTextInputFormatter pentru trailling zeros
@@ -14,7 +14,7 @@
 - [Effective Dart: Style](https://dart.dev/guides/language/effective-dart/style)
 - [Look for the Flutter project and see their rules](https://github.com/flutter/flutter)
 - Search the rule on Google and find more details on the Dart Official Page
-- Autoformat file  =>  CTRL + Alt + L 
+- Format file  =>  CTRL + Alt + L 
   
 <br>
 
@@ -44,13 +44,13 @@ Github ne da pe luna 2000min Linux
 
 ## Version Control (VCS)
 
-- Ai grija sa nu fie fisierele cu rosu (`git add`)
+- Ai grija sa nu fie fisierele cu rosu (`git add nume_fisier`)
 
 <br>
 
 ## Animation
 
-- Animatii ar trebui sa aiba o durata cam de 300ms
+- Animatiile ar trebui sa aiba o durata cam de 300ms
 - De obicei mergem cu cele geometrie directional (start-finish)
 - Folositi valori care se impart la 4 sau la 8, de preferat la 8
 
