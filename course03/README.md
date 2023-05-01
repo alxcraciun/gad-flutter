@@ -2,6 +2,7 @@
 
 ## Homework
 
+-  E mai greu sa folosesti CI/CD cand ai mai multe branches
 - Nu trebuie neaparat folosit setState() la alerte
 - remainder() este echivalent cu %
 - FilteringTextInputFormatter pentru trailling zeros
@@ -18,7 +19,7 @@
 <br>
 
 ### Commands
-- `flutter analyse` == Dart Analysis Tab
+- `flutter analyse` = Dart Analysis Tab
 - `dart format --fix lib` 
 - `dart format --line-length 120 lib`
 
