@@ -63,6 +63,8 @@
 - Pentru a le gestiona si a scrie cod asincron avem mai multe optiuni
 - Cu cat intelegi mai bine, cu atat poti progresa la urmatorul nivel:
 
+<br>
+
 ## Async Code in Dart
 - evita nivelul 1
 - de obicei vom folosi nivelele 2 si 3
@@ -80,9 +82,10 @@
 
 <br>
 
-### Isolates and Event Loops
+**Isolates and Event Loops** <br>
 https://www.youtube.com/watch?v=vl_AaCgudcY
 
+<br>
 
 ## Nivel 1: then & catchError
 
