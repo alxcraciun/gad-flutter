@@ -79,9 +79,9 @@ State-ul e o valoare pe care vreau sa o retin
 
 <br>
 
-#### Stateful Rules:
+#### Stateful Widget Rules:
 1.  Definim o variabila care se schimba
-2.  Folosim variabila in functia build pentru a crea UI
+2.  Folosim variabila build() pentru a crea UI
 3.  Modificam variabila in setState pentru a seta UI
 
 <br>

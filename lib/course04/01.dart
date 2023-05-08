@@ -1,11 +1,12 @@
+// ignore_for_file: type=lint
+
 void main() {
-  final String title = data['data']['movies'][0]['title'];
-  print(title);
+  final movies = data['data']['movies'];
 
-  var movies_length = data['data']['movies'].length;
-
-  for (int i = 0; i < movies_length; i++)
+  // for (int i = 0; i < movies.length; i++) works as well
+  for (int i = 0; i < (movies.length as int ); i++) {
     print(data['data']['movies'][i]['title']);
+  }
 }
 
 final Map<String, dynamic> data = <String, dynamic>{

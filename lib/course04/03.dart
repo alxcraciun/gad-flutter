@@ -4,6 +4,10 @@ import 'dart:convert';
 import 'package:http/http.dart';
 
 void main() {
+  getMovies().then((List<String> titles) => print(titles));
+}
+
+Future<List<String>> getMovies() {
   final Uri uri = Uri(
     scheme: 'https',
     host: 'yts.mx',
@@ -13,15 +17,17 @@ void main() {
     },
   );
 
-  get(uri).then((Response response) {
+  return get(uri).then((Response response) {
     print(response.statusCode);
     final Map<String, dynamic> map = jsonDecode(response.body) as Map<String, dynamic>;
     final Map<String, dynamic> data = map['data'] as Map<String, dynamic>;
     final List<dynamic> movies = data['movies'] as List<dynamic>;
 
+    final List<String> titles = <String>[];
     for (int i = 0; i < movies.length; i++) {
       final Map<String, dynamic> movie = movies[i] as Map<String, dynamic>;
-      print(movie['title']);
+      titles.add(movie['title'] as String);
     }
+    return titles;
   });
 }
